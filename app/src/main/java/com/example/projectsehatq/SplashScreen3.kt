@@ -16,7 +16,7 @@ class SplashScreen3 : AppCompatActivity() {
 
         val btnNext: ImageButton = findViewById(R.id.btnNext)
         val tvNext: TextView = findViewById(R.id.tvNext)
-        val intent = Intent(this, DashboardActivity::class.java)
+        val intent = Intent(this, LoginActivity::class.java)
 
         btnNext.setOnClickListener {
             startActivity(intent)

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/creme"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/sehatq_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/asdasd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Login ke Akunmu"
+        android:textColor="@color/blue_emerald"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="133sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="Selamat Datang! Pilih Metode Login"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asdasd" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Atau Lanjut dengan E-mail"
+        android:textAlignment="center"
+        android:textColor="@color/blue_emerald"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/aplebutn" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins"
+        android:text="Lupa password atau email?"
+        android:textAlignment="center"
+        android:textColor="@color/yellow_radiant"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/cinPassword" />
+
+    <Button
+        android:id="@+id/googlebtton"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/blue_emerald"
+        android:drawableLeft="@drawable/google"
+        android:paddingEnd="55dp"
+        android:text="Google"
+        android:textColor="@color/creme"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/aplebutn"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/blue_emerald"
+        android:drawableLeft="@drawable/apple"
+        android:paddingEnd="55dp"
+        android:text="Apple"
+        android:textColor="@color/creme"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/googlebtton" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/blue_emerald"
+        android:text="Login"
+        android:textColor="@color/creme"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="48dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/yellow_radiant"
+        app:layout_constraintStart_toStartOf="@+id/aplebutn"
+        app:layout_constraintTop_toBottomOf="@id/aplebutn" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="48dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/yellow_radiant"
+        app:layout_constraintEnd_toEndOf="@+id/aplebutn"
+        app:layout_constraintTop_toBottomOf="@id/aplebutn" />
+
+    <EditText
+        android:id="@+id/cinEmail"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/form_bg"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawableTint="@color/blue_emerald"
+        android:hint="E-Mail"
+        android:inputType="text|textEmailAddress"
+        android:paddingLeft="10dp"
+        android:paddingRight="150dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue_emerald"
+        android:textColorHint="@color/blue_emerald"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/cinPassword"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/form_bg"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawableTint="@color/blue_emerald"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="120dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue_emerald"
+        android:textColorHint="@color/blue_emerald"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cinEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

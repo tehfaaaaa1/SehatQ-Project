@@ -6,4 +6,116 @@
     android:layout_height="match_parent"
     tools:context=".DashboardActivity">
 
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Selamat Datang, \nIva Iva!"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/gato"
+            android:src="@drawable/ic_bell" />
+
+        <ImageView
+            android:id="@+id/gato"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cat_pfp" />
+
+    </RelativeLayout>
+
+<!-- THIS IS WHERE THE FUN BEGINS-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/navbar">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="50dp"
+            android:layout_toLeftOf="@id/ibDoctor"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp">
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/ibHome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_home"
+                android:backgroundTint="@color/blue_caribbean" />
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageButton
+            android:id="@+id/ibDoctor"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_doctor"
+            android:backgroundTint="@color/white"
+            android:layout_toLeftOf="@id/ibShop"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"/>
+
+        <ImageButton
+            android:id="@+id/ibShop"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/ic_store"
+            android:backgroundTint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/ibHospital"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_hospital"
+            android:backgroundTint="@color/white"
+            android:layout_toRightOf="@id/ibShop"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"/>
+
+        <ImageButton
+            android:id="@+id/ibArticle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_article"
+            android:backgroundTint="@color/white"
+            android:layout_toRightOf="@id/ibHospital"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"/>
+
+    </RelativeLayout>
+    
 </androidx.constraintlayout.widget.ConstraintLayout>

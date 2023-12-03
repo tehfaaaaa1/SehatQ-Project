@@ -15,14 +15,13 @@ class SplashScreen1 : AppCompatActivity() {
 
         val btnNext:ImageButton = findViewById(R.id.btnNext)
         val tvNext:TextView = findViewById(R.id.tvNext)
+        val intent = Intent(this, SplashScreen2::class.java)
 
         btnNext.setOnClickListener {
-            val intent = Intent(this, SplashScreen2::class.java)
             startActivity(intent)
         }
 
         tvNext.setOnClickListener {
-            val intent = Intent(this, SplashScreen2::class.java)
             startActivity(intent)
         }
     }
