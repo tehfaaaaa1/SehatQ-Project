@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.projectsehatq"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.projectsehatq"
         minSdk = 29
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
